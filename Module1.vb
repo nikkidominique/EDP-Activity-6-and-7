@@ -9,8 +9,8 @@ Module Module1
 
     Public currentDate As DateTime = DateTime.Now
     'Public strpassword = "nikki"
-    Public xlsPath As String = System.IO.Directory.GetCurrentDirectory & "\..\..\dataXls\TEMPLATE\"
-    Public xlsFiles As String = System.IO.Directory.GetCurrentDirectory & "\..\..\dataXls\"
+    Public xlsPath As String = System.IO.Directory.GetCurrentDirectory & "\..\..\dataXLS\Template\"
+    Public xlsFiles As String = System.IO.Directory.GetCurrentDirectory & "\..\..\dataXLS\"
 
     Public Sub Connect_to_DB()
         myConnectionString = "server=127.0.0.1;" _

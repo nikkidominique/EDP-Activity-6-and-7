@@ -39,7 +39,8 @@ Public Class MenuForm
         End If
     End Sub
 
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
-
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        ' Open the local file URL
+        Process.Start("file:///C:/Users/Nikki%20Abogadie/source/repos/Activity_4/Activity_4/EDP-UsersManual/UsersManual.html")
     End Sub
 End Class

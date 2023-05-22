@@ -26,22 +26,23 @@ Partial Class MenuForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.BackupBtn = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.BackupBtn = New System.Windows.Forms.Button()
         Me.ViewBtn = New System.Windows.Forms.Button()
         Me.UpDeleteBtn = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.AddBtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -54,7 +55,7 @@ Partial Class MenuForm
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(453, 559)
+        Me.Panel1.Size = New System.Drawing.Size(453, 577)
         Me.Panel1.TabIndex = 0
         '
         'Label3
@@ -90,9 +91,20 @@ Partial Class MenuForm
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Welcome to the"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Activity_4.My.Resources.Resources.menu
+        Me.PictureBox1.Location = New System.Drawing.Point(-57, 170)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(582, 409)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Plum
+        Me.Panel2.Controls.Add(Me.LinkLabel1)
         Me.Panel2.Controls.Add(Me.Label9)
         Me.Panel2.Controls.Add(Me.BackupBtn)
         Me.Panel2.Controls.Add(Me.Label7)
@@ -107,8 +119,19 @@ Partial Class MenuForm
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel2.Location = New System.Drawing.Point(425, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(480, 559)
+        Me.Panel2.Size = New System.Drawing.Size(480, 577)
         Me.Panel2.TabIndex = 1
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.Location = New System.Drawing.Point(354, 546)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(114, 22)
+        Me.LinkLabel1.TabIndex = 2
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "UsersManual"
         '
         'Label9
         '
@@ -121,6 +144,16 @@ Partial Class MenuForm
         Me.Label9.TabIndex = 4
         Me.Label9.Text = "Backup Database"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'BackupBtn
+        '
+        Me.BackupBtn.BackColor = System.Drawing.Color.LavenderBlush
+        Me.BackupBtn.Image = Global.Activity_4.My.Resources.Resources.data_backup_64
+        Me.BackupBtn.Location = New System.Drawing.Point(189, 401)
+        Me.BackupBtn.Name = "BackupBtn"
+        Me.BackupBtn.Size = New System.Drawing.Size(120, 120)
+        Me.BackupBtn.TabIndex = 3
+        Me.BackupBtn.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -181,26 +214,6 @@ Partial Class MenuForm
         Me.Label4.Text = "Add Employee"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Activity_4.My.Resources.Resources.menu
-        Me.PictureBox1.Location = New System.Drawing.Point(-57, 170)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(582, 409)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'BackupBtn
-        '
-        Me.BackupBtn.BackColor = System.Drawing.Color.LavenderBlush
-        Me.BackupBtn.Image = Global.Activity_4.My.Resources.Resources.data_backup_64
-        Me.BackupBtn.Location = New System.Drawing.Point(189, 401)
-        Me.BackupBtn.Name = "BackupBtn"
-        Me.BackupBtn.Size = New System.Drawing.Size(120, 120)
-        Me.BackupBtn.TabIndex = 3
-        Me.BackupBtn.UseVisualStyleBackColor = False
-        '
         'ViewBtn
         '
         Me.ViewBtn.BackColor = System.Drawing.Color.LavenderBlush
@@ -245,16 +258,16 @@ Partial Class MenuForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(905, 559)
+        Me.ClientSize = New System.Drawing.Size(905, 577)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.Name = "MenuForm"
         Me.Text = "Main Menu"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -276,4 +289,5 @@ Partial Class MenuForm
     Friend WithEvents Button2 As Button
     Friend WithEvents Label9 As Label
     Friend WithEvents BackupBtn As Button
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class
